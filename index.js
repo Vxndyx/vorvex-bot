@@ -1,3 +1,4 @@
+console.log("TOKEN CARGADO:", process.env.TOKEN?.length);
 const {
   Client,
   GatewayIntentBits,
