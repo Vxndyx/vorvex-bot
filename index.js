@@ -193,7 +193,7 @@ client.on("messageCreate", async (message) => {
             color: 0x1e1f22,
             description: `
 <:Invisible:1449077600612913266><:Invisible:1449077600612913266><:Invisible:1449077600612913266><:Invisible:1449077600612913266><:Invisible:1449077600612913266>𓂃 ࣪˖ <a:Amulet:1449077299289915512>
-<:Invisible:1449077600612913266> <a:Loveted:1449077823686967426> You get <@1449054358736998404>
+<:Invisible:1449077600612913266> <a:Loveted:1449077823686967426> You get <@&1449054358736998404>
 <:Invisible:1449077600612913266><:Invisible:1449077600612913266> <a:Loveted:1449077823686967426> __Press verify to start__
             `,
             image: {
