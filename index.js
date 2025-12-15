@@ -1,13 +1,31 @@
+console.log("TOKEN CARGADO:", process.env.TOKEN?.length);
+const {
+  Client,
+  GatewayIntentBits,
+  EmbedBuilder,
+  ActionRowBuilder,
+  ButtonBuilder,
+  ButtonStyle,
+  Events,
+  ChannelType,
+  PermissionsBitField,
+  StringSelectMenuBuilder
+} = require("discord.js");
 require("dotenv").config();
+const express = require("express");
+const app = express();
 
-const { Client, GatewayIntentBits } = require("discord.js");
+app.get("/", (req, res) => res.send("Bot online"));
+app.listen(process.env.PORT || 3000);
 
+// ======== CLIENTE ÚNICO ========
 const client = new Client({
-    intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.MessageContent
-    ]
+  intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildMembers
+  ]
 });
 
 client.once("ready", () => {
