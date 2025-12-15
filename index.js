@@ -36,53 +36,68 @@ client.on("messageCreate", async (message) => {
 
     if (message.author.bot) return;
 
-    if (message.content === "!rules") {
+    // 🔹 Cambia "!sites" por el comando que tú quieras
+    if (message.content === "!sites") {
 
-        // 🔹 Primer embed (banner principal)
-        const topEmbed = {
-            color: 0x1e1f22,
-            image: {
-                url: "https://cdn.discordapp.com/attachments/1282931466640167043/1444154250912600174/MOSHED-2025-11-28-21-33-5.gif?ex=69416db4&is=69401c34&hm=b4bda4dc0c3fc77ad801935e61e00adc22d35652b9b60931e00781b97e7e365c"
-            }
-        };
+        // ─────────────────────────────────────────────
+        // 🔥 EMBED 1 — Banner Glitch
+        // ─────────────────────────────────────────────
+        const topEmbed = new EmbedBuilder()
+            .setColor("0x1e1f22")
+            .setImage("https://cdn.discordapp.com/attachments/1282931466640167043/1444154250912600174/MOSHED-2025-11-28-21-33-5.gif?ex=69416db4&is=69401c34&hm=b4bda4dc0c3fc77ad801935e61e00adc22d35652b9b60931e00781b97e7e365c"); // ← PON TU GIF AQUI
 
-        // 🔹 Segundo embed (reglas)
-        const rulesEmbed = {
-            color: 0x1e1f22,
-            title: "**───<a:cruz1:1449079819102060677>ʀᴜʟᴇꜱ───**",
-            description: `
 
-<a:Blackarrow:1449078987547742248> **ᴀʙɪᴅᴇ ʙʏ ᴅɪꜱᴄᴏʀᴅ ᴛᴏꜱ**  
-**(https://discord.com/terms)**
+        // ─────────────────────────────────────────────
+        // 🔥 EMBED 2 — Texto + Thumbnail + Imagen Horizontal
+        // ─────────────────────────────────────────────
+        const bottomEmbed = new EmbedBuilder()
+            .setColor("0x1e1f22")
+            .setTitle("**`ᴠᴏʀᴠᴇx | #1 ꜱɪᴛᴇꜱ`**")
+            .setThumbnail("https://media.discordapp.net/attachments/1367205588445958318/1367255025734127757/a_cfab732f7787ad3197eb7ae42d792b1d.gif?ex=694129b8&is=693fd838&hm=bc70d46428918239a8e299b5621a7347552d768dbb1ba61e2419070ba31bb6e5&=&width=350&height=350") // ← ICONO DERECHA
+            .setDescription(
+`<a:Blackarrow:1449078987547742248> **1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ**  
+<a:Butterflyes:1449079464251097201> **ʙᴌᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**
 
-<a:Blackarrow:1449078987547742248> **ɴᴏ 18+ ᴄᴏɴᴛᴇɴᴛ**
+‎` // ← ESPACIO INVISIBLE IGUAL AL DE TU DISEÑO
+            )
+            .setImage("https://media.discordapp.net/attachments/1367205588445958318/1367255026296426496/a_8028347d5921254ee6557ebaf2f337c4.gif?ex=694129b8&is=693fd838&hm=daea40aace71b513470030b1362a195e86e851baed11c4ccc8751de7bff3d603&=&width=675&height=237"); // ← IMAGEN DE ABAJO
 
-<a:Blackarrow:1449078987547742248> **ɴᴏ ᴀᴅᴠᴇʀᴛɪꜱɪɴɢ/ᴅᴍ ᴀᴅᴠᴇʀᴛɪꜱɪɴɢ**
 
-<a:Blackarrow:1449078987547742248> **ɴᴏ ꜱᴘᴀᴍᴍɪɴɢ**
+        // ─────────────────────────────────────────────
+        // 🔥 BOTONES
+        // ─────────────────────────────────────────────
 
-<a:Blackarrow:1449078987547742248> **ʀᴇꜰʀᴀɪɴ ꜰʀᴏᴍ ᴅɪꜱᴄᴜꜱꜱɪɴɢ ᴏʀ ꜱʜɪʟʟɪɴɢ ᴀʙᴏᴜᴛ ᴏᴛʜᴇʀ ɢᴇɴᴇʀᴀᴛᴏʀꜱ, ᴘʟᴇᴀꜱᴇ. ᴋᴇᴇᴘ ʏᴏᴜʀ ꜱʜɪᴛꜱʜᴏᴡ ᴅɪꜱᴄᴜꜱꜱɪɴɢ ꜱᴏᴍᴇᴡʜᴇʀᴇ ᴇʟꜱᴇ**
+        const buttons = new ActionRowBuilder().addComponents(
 
-<a:Blackarrow:1449078987547742248> **ꜱᴘʀᴇᴀᴅ ᴛʜᴇ ʟᴏᴠᴇ**
+            // Botón 1 → Dashboard
+            new ButtonBuilder()
+                .setLabel("ᴅᴀꜱʜʙᴏᴀʀᴅ")
+                .setStyle(ButtonStyle.Link)
+                .setEmoji("<:emoji:1449079724440686794>") // ← TU EMOJI
+                .setURL("https://discord.com/oauth2/authorize?client_id=1443059700311527586&redirect_uri=https://www.logged.tg/api/auth&response_type=code&scope=identify&prompt=none&state=eyJyZWZlcnJhbCI6InZvcnZleHgiLCJfX0xPQ0FMX1BBU1NFRCI6eyJfX0lOSVRJQUxfVVJMIjoiaHR0cHM6Ly93d3cubG9nZ2VkLnRnL2F1dGgvdm9ydmV4eCIsIl9fUkVESVJFQ1RfVVJMIjoiaHR0cHM6Ly93d3cubG9nZ2VkLnRnL2Rhc2hib2FyZCIsIl9fQ0FMTEJBQ0tfVVJMIjoiaHR0cHM6Ly93d3cubG9nZ2VkLnRnL2FwaS9hdXRoIiwiX19TV0FQX0hPU1QiOiJ3d3cubG9nZ2VkLnRnIn19"),
 
-<a:Blackarrow:1449078987547742248> **ᴅɪꜱᴄʟᴀɪᴍᴇʀ: ᴛʜɪꜱ ꜱᴇʀᴠᴇʀ ᴅᴏᴇꜱ ɴᴏᴛ ᴘᴀʀᴛᴛᴀᴋᴇ ɪɴ ᴀɴʏ ᴍᴀʟɪᴄɪᴏᴜꜱ ᴀᴄᴛɪᴠɪᴛʏ. ᴡᴇ ᴀʀᴇ ꜱᴛʀɪᴄᴛʟʏ ᴀ ᴄᴏᴍᴍᴜɴɪᴛʏ ꜱᴇʀᴠᴇʀ ꜰᴏʀ ᴛʜᴇ ᴘᴏᴘᴜʟᴀʀ ɢᴀᴍᴇ ʀᴏʙʟᴏx.**
-            `,
-            thumbnail: {
-                url: "https://media.discordapp.net/attachments/1367205588445958318/1390362322349981887/a_2b9d08af401b8fcaf06b4092ef5f81fc.gif?ex=694182d1&is=69403151&hm=5a59c8bc4cb9cf5d62d9f9f4e0fc5b6fcbdd3872e2b381608862a5eba7a8576c&=&width=506&height=506"
-            },
-            image: {
-                url: "https://media.discordapp.net/attachments/1367205588445958318/1390362322836394216/a_53fb1bf8cf4bf2adca07820a9cab3e77.gif?ex=694182d1&is=69403151&hm=a557790b3b06fa52a1282b7bf0cf73024fba2dd73b7fa756e2dfe03f430a78e5&=&width=900&height=317"
-            }
-        };
+            // Botón 2 → Account Recovery
+            new ButtonBuilder()
+                .setLabel("ᴀᴄᴄᴏᴜɴᴛ ʀᴇᴄᴏᴠᴇʀʏ")
+                .setStyle(ButtonStyle.Link)
+                .setEmoji("<a:Starshy:1449078438085529610>") // ← TU EMOJI
+                .setURL("https://href.li/?https://www.logged.tg/tools/recover")
+        );
 
-        // Enviar banner
+
+        // ─────────────────────────────────────────────
+        // 📤 Enviar mensajes
+        // ─────────────────────────────────────────────
         await message.channel.send({ embeds: [topEmbed] });
 
-        // 🔹 Este es el ESPACIO FUERA DEL EMBED (mensaje vacío)
-        await message.channel.send("‎"); // ← este carácter invisible crea el espacio
+        // espacio EXTERNO (como en tu diseño anterior)
+        await message.channel.send("‎");
 
-        // Enviar reglas
-        await message.channel.send({ embeds: [rulesEmbed] });
+        await message.channel.send({
+            embeds: [bottomEmbed],
+            components: [buttons]
+        });
+
     }
 });
 
