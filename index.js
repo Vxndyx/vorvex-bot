@@ -43,7 +43,7 @@ client.on("messageCreate", async (message) => {
         // 🔥 EMBED 1 — Banner Glitch
         // ─────────────────────────────────────────────
         const topEmbed = new EmbedBuilder()
-            .setColor("0x1e1f22")
+            .setColor(0x1e1f22)
             .setImage("https://cdn.discordapp.com/attachments/1282931466640167043/1444154250912600174/MOSHED-2025-11-28-21-33-5.gif?ex=69416db4&is=69401c34&hm=b4bda4dc0c3fc77ad801935e61e00adc22d35652b9b60931e00781b97e7e365c"); // ← PON TU GIF AQUI
 
 
@@ -51,7 +51,7 @@ client.on("messageCreate", async (message) => {
         // 🔥 EMBED 2 — Texto + Thumbnail + Imagen Horizontal
         // ─────────────────────────────────────────────
         const bottomEmbed = new EmbedBuilder()
-            .setColor("0x1e1f22")
+            .setColor(0x1e1f22)
             .setTitle("**`ᴠᴏʀᴠᴇx | #1 ꜱɪᴛᴇꜱ`**")
             .setThumbnail("https://media.discordapp.net/attachments/1367205588445958318/1367255025734127757/a_cfab732f7787ad3197eb7ae42d792b1d.gif?ex=694129b8&is=693fd838&hm=bc70d46428918239a8e299b5621a7347552d768dbb1ba61e2419070ba31bb6e5&=&width=350&height=350") // ← ICONO DERECHA
             .setDescription(
