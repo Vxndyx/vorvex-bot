@@ -487,7 +487,8 @@ client.on("messageCreate", async (message) => {
         const panelEmbed = new EmbedBuilder()
             .setColor(0x1e1f22)
             .setTitle("**─── <:Nistar:1449077184969834526> SUPPORT ───**")
-            .setDescription("**<:cruz:1449079648905330888> ᴘʟᴇᴀꜱᴇ ᴄʜᴏᴏꜱᴇ ᴀ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴏɴ ᴡʜᴀᴛ ꜱᴜᴘᴘᴏʀᴛ ʏᴏᴜ ɴᴇᴇᴅ**");
+            .setDescription("**<:cruz:1449079648905330888> ᴘʟᴇᴀꜱᴇ ᴄʜᴏᴏꜱᴇ ᴀ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴏɴ ᴡʜᴀᴛ ꜱᴜᴘᴘᴏʀᴛ ʏᴏᴜ ɴᴇᴇᴅ**")
+            .setImage("https://media.discordapp.net/attachments/1017600005764284497/1415662667720556587/Tumblr_l_76198603461233.gif?ex=6941ed59&is=69409bd9&hm=5cbfab27114a75ddcbc9ab3674620d2bb04ac6ee6c712261884a80c4d4280be4&=&width=1440&height=79");
 
         const button = new ActionRowBuilder().addComponents(
             new ButtonBuilder()
@@ -632,9 +633,9 @@ client.on("interactionCreate", async (interaction) => {
                 .setCustomId("ticket_type_select")
                 .setPlaceholder("ꜱᴇʟᴇᴄᴛ ᴛɪᴄᴋᴇᴛ ᴛʏᴘᴇ...")
                 .addOptions([
-                    { label: "ʟɪɴᴋꜱ", value: "links", description: "ᴏᴘᴇɴ ᴛɪᴄᴋᴇᴛ ꜰᴏʀ ʜᴇʟᴘ ᴡɪᴛʜ ʟɪɴᴋꜱ" },
-                    { label: "ᴍᴇᴛʜᴏᴅꜱ", value: "methods", description: "ᴏᴘᴇɴ ᴛɪᴄᴋᴇᴛ ꜰᴏʀ ʜᴇʟᴘ ᴡɪᴛʜ ᴍᴇᴛʜᴏᴅꜱ" },
-                    { label: "ᴏᴛʜᴇʀꜱ", value: "others", description: "ᴏᴘᴇɴ ᴛɪᴄᴋᴇᴛ ꜰᴏʀ ᴏᴛʜᴇʀ ʜᴇʟᴘ" }
+                    { label: "ʟɪɴᴋꜱ", value: "links", description: "ᴏᴘᴇɴ ᴛɪᴄᴋᴇᴛ ꜰᴏʀ ʜᴇʟᴘ ᴡɪᴛʜ ʟɪɴᴋꜱ", emoji:"<a:cruz1:1449079819102060677>" },
+                    { label: "ᴍᴇᴛʜᴏᴅꜱ", value: "methods", description: "ᴏᴘᴇɴ ᴛɪᴄᴋᴇᴛ ꜰᴏʀ ʜᴇʟᴘ ᴡɪᴛʜ ᴍᴇᴛʜᴏᴅꜱ", emoji:"<a:Butterflyes:1449079464251097201>" },
+                    { label: "ᴏᴛʜᴇʀꜱ", value: "others", description: "ᴏᴘᴇɴ ᴛɪᴄᴋᴇᴛ ꜰᴏʀ ᴏᴛʜᴇʀ ʜᴇʟᴘ", emoji:"<a:Starshy:1449078438085529610>" }
                 ])
         );
 
@@ -683,7 +684,11 @@ client.on("interactionCreate", async (interaction) => {
             .setColor(0x1e1f22)
             .setTitle("**<:cruz:1449079648905330888> Welcome to Vorvex**")
             .setDescription(`Welcome <@${user.id}>\nPlease describe what you need help with and wait for a support member to assist you.`)
-            .setFooter({ text: `Ticket opened by ${user.username}` });
+            .setImage("https://media.discordapp.net/attachments/1017600005764284497/1415662667720556587/Tumblr_l_76198603461233.gif?ex=6941ed59&is=69409bd9&hm=5cbfab27114a75ddcbc9ab3674620d2bb04ac6ee6c712261884a80c4d4280be4&=&width=1440&height=79") // 👈 línea animada
+            .setFooter({
+  text: `Ticket opened by ${user.username}`, // Texto que aparece
+  iconURL: client.user.displayAvatarURL({ dynamic: true, size: 64 }) // Imagen del bot
+});
 
         const closeBtn = new ActionRowBuilder().addComponents(
             new ButtonBuilder()
