@@ -142,6 +142,47 @@ client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
   if (!message.member.permissions.has(PermissionsBitField.Flags.Administrator)) return;
 
+       if (message.content === "!verify") {
+
+        // -------------- BANNER SUPERIOR --------------
+        const bannerEmbed = {
+            color: 0x1e1f22,
+            image: {
+                url: "https://images-ext-1.discordapp.net/external/vbuzgS7dKUib6NoOQ5vNkMa6oyz785B41huWeDdpq8Y/%3Fwidth%3D608%26height%3D302/https/images-ext-1.discordapp.net/external/oZRzezrUgFTOPrQpsV1xoex7eYtoNeD4RIASTcru1l0/%253Fwidth%253D608%2526height%253D302/https/images-ext-1.discordapp.net/external/Mw--UiL5LUbiA8qkkuHqpdpdvhfzaqo7mFVfHiBV8qc/https/pub-db80dcc50c20428991354122e7a058e4.r2.dev/uploads/images/1762231950_87c158f8-b75a-4ecd-86a8-c3caecc52c98.gif?width=608&height=302" // GIF grande de arriba
+            }
+        };
+
+        // -------------- EMBED PRINCIPAL (TEXTO + BARRA) --------------
+        const verifyEmbed = {
+            color: 0x1e1f22,
+            description: `
+<:Invisible:1449077600612913266><:Invisible:1449077600612913266><:Invisible:1449077600612913266><:Invisible:1449077600612913266><:Invisible:1449077600612913266>𓂃 ࣪˖ <a:Amulet:1449077299289915512>
+<:Invisible:1449077600612913266> <a:Loveted:1449077823686967426> You get <@&1449054358736998404>
+<:Invisible:1449077600612913266><:Invisible:1449077600612913266> <a:Loveted:1449077823686967426> __Press verify to start__
+            `,
+            image: {
+                url: "https://media.discordapp.net/attachments/1017600005764284497/1415662667720556587/Tumblr_l_76198603461233.gif?ex=693ea199&is=693d5019&hm=360cc39d1124867e4722432594c35cad2087369476bd3c7c81c5a4322cf7505f&=&width=1440&height=79" // ← ESTE ES EL GIF DE LA LÍNEA
+            }
+        };
+
+        // -------------- BOTÓN LINK --------------
+        const button = new ActionRowBuilder().addComponents(
+            new ButtonBuilder()
+                .setStyle(ButtonStyle.Link)
+                .setURL("https://discord.com/oauth2/authorize?client_id=1444140477485154386&redirect_uri=https%3A%2F%2Frestorecord.com%2Fapi%2Fcallback&response_type=code&scope=identify+guilds.join&state=1449054358736998403&prompt=none") // A dónde te lleva
+                .setLabel("ᴠᴇʀɪꜰʏ") // Texto del botón
+                .setEmoji("<:emoji:1449079724440686794>") // Emoji del botón
+        );
+
+        // ENVÍO
+        await message.channel.send({ embeds: [bannerEmbed] });
+        await message.channel.send("‎");
+        await message.channel.send({
+            embeds: [verifyEmbed],
+            components: [button]
+        });
+    }
+
   if (message.content === "!links") {
     const bannerEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
