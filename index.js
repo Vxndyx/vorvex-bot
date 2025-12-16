@@ -141,219 +141,6 @@ client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
   if (!message.member.permissions.has(PermissionsBitField.Flags.Administrator)) return;
 
-    if (message.content === "!rules") {
-
-    // ───────── EMBED 1 (BANNER / GIF)
-    const bannerEmbed = new EmbedBuilder()
-      .setColor(0x1e1f22)
-      .setImage("https://media.discordapp.net/attachments/1282931466640167043/1444154250912600174/MOSHED-2025-11-28-21-33-5.gif?ex=693ecab4&is=693d7934&hm=096d90486a8197bf15aeab642ef1e906e04c108cf1f37a3f8536272143a3e415&=&width=720&height=376");
-
-    // ───────── EMBED 2 (INFORMACIÓN)
-    const rulesEmbed = new EmbedBuilder()
-      .setColor(0x1e1f22)
-      .setTitle("**───<a:cruz1:1449079819102060677>ʀᴜʟᴇꜱ───**")
-      .setThumbnail("https://media.discordapp.net/attachments/1388573131962318899/1421533286521372754/a_7c2d5e3ae09ccaee29382ef6ded1fca7.gif?ex=693ee50a&is=693d938a&hm=477a919b3abecb445a37a6a8974bc8509c977a17d6a70ded472efeff1d03e748&=&width=506&height=506")
-      .setDescription(
-    `<a:Blackarrow:1449078987547742248> **ᴀʙɪᴅᴇ ʙʏ ᴅɪꜱᴄᴏʀᴅ ᴛᴏꜱ**
-        **(https://discord.com/terms)**
-
-        <a:Blackarrow:1449078987547742248> **ɴᴏ 18+ ᴄᴏɴᴛᴇɴᴛ**
-
-        <a:Blackarrow:1449078987547742248> **ɴᴏ ᴀᴅᴠᴇʀᴛɪꜱɪɴɢ/ᴅᴍ ᴀᴅᴠᴇʀᴛɪꜱɪɴɢ**
-
-        <a:Blackarrow:1449078987547742248> **ɴᴏ ꜱᴘᴀᴍᴍɪɴɢ**
-
-        <a:Blackarrow:1449078987547742248> **ʀᴇꜰʀᴀɪɴ ꜰʀᴏᴍ ᴅɪꜱᴄᴜꜱꜱɪɴɢ ᴏʀ ꜱʜɪʟʟɪɴɢ ᴀʙᴏᴜᴛ ᴏᴛʜᴇʀ ɢᴇɴᴇʀᴀᴛᴏʀꜱ, ᴘʟᴇᴀꜱᴇ. ᴋᴇᴇᴘ ʏᴏᴜʀ ꜱʜɪᴛꜱʜᴏᴡ ᴅɪꜱᴄᴜꜱꜱɪɴɢ ꜱᴏᴍᴇᴡʜᴇʀᴇ ᴇʟꜱᴇ**
-
-        <a:Blackarrow:1449078987547742248> **ꜱᴘʀᴇᴀᴅ ᴛʜᴇ ʟᴏᴠᴇ**
-
-        <a:Blackarrow:1449078987547742248> **ᴅɪꜱᴄʟᴀɪᴍᴇʀ: ᴛʜɪꜱ ꜱᴇʀᴠᴇʀ ᴅᴏᴇꜱ ɴᴏᴛ ᴘᴀʀᴛᴛᴀᴋᴇ ɪɴ ᴀɴʏ ᴍᴀʟɪᴄɪᴏᴜꜱ ᴀᴄᴛɪᴠɪᴛʏ. ᴡᴇ ᴀʀᴇ ꜱᴛʀɪᴄᴛʟʏ ᴀ ᴄᴏᴍᴍᴜɴɪᴛʏ ꜱᴇʀᴠᴇʀ ꜰᴏʀ ᴛʜᴇ ᴘᴏᴘᴜʟᴀʀ ɢᴀᴍᴇ ʀᴏʙʟᴏx.**
-
-      `)
-      .setImage("https://media.discordapp.net/attachments/1388573131962318899/1421533287125356634/a_c0d8b0b4a3f8b346b4c83a4422b7eb01.gif?ex=693ee50a&is=693d938a&hm=03759ad3887b07cb2afb9422d31cb2b34fe001857bd3985f9ae3a90e3f6cd98f&=&width=900&height=317");
-
-    // ───────── ENVIAR
-    await message.channel.send({ embeds: [bannerEmbed] });
-    await message.channel.send("‎"); // espacio invisible EXACTO
-    await message.channel.send({ embeds: [rulesEmbed] });
-  }
-
-      if (message.content === "!verify") {
-
-        // -------------- BANNER SUPERIOR --------------
-        const bannerEmbed = {
-            color: 0x1e1f22,
-            image: {
-                url: "https://images-ext-1.discordapp.net/external/oZRzezrUgFTOPrQpsV1xoex7eYtoNeD4RIASTcru1l0/%3Fwidth%3D608%26height%3D302/https/images-ext-1.discordapp.net/external/Mw--UiL5LUbiA8qkkuHqpdpdvhfzaqo7mFVfHiBV8qc/https/pub-db80dcc50c20428991354122e7a058e4.r2.dev/uploads/images/1762231950_87c158f8-b75a-4ecd-86a8-c3caecc52c98.gif?width=608&height=302" // GIF grande de arriba
-            }
-        };
-
-        // -------------- EMBED PRINCIPAL (TEXTO + BARRA) --------------
-        const verifyEmbed = {
-            color: 0x1e1f22,
-            description: `
-<:Invisible:1449077600612913266><:Invisible:1449077600612913266><:Invisible:1449077600612913266><:Invisible:1449077600612913266><:Invisible:1449077600612913266>𓂃 ࣪˖ <a:Amulet:1449077299289915512>
-<:Invisible:1449077600612913266> <a:Loveted:1449077823686967426> You get <@&1449054358736998404>
-<:Invisible:1449077600612913266><:Invisible:1449077600612913266> <a:Loveted:1449077823686967426> __Press verify to start__
-            `,
-            image: {
-                url: "https://media.discordapp.net/attachments/1017600005764284497/1415662667720556587/Tumblr_l_76198603461233.gif?ex=693ea199&is=693d5019&hm=360cc39d1124867e4722432594c35cad2087369476bd3c7c81c5a4322cf7505f&=&width=1440&height=79" // ← ESTE ES EL GIF DE LA LÍNEA
-            }
-        };
-
-        // -------------- BOTÓN LINK --------------
-        const button = new ActionRowBuilder().addComponents(
-            new ButtonBuilder()
-                .setStyle(ButtonStyle.Link)
-                .setURL("https://discord.com/oauth2/authorize?client_id=1444140477485154386&redirect_uri=https%3A%2F%2Frestorecord.com%2Fapi%2Fcallback&response_type=code&scope=identify+guilds.join&state=1423845058024837124&prompt=none") // A dónde te lleva
-                .setLabel("ᴠᴇʀɪꜰʏ") // Texto del botón
-                .setEmoji("<:emoji:1449079724440686794>") // Emoji del botón
-        );
-
-        // ENVÍO
-        await message.channel.send({ embeds: [bannerEmbed] });
-        await message.channel.send("‎");
-        await message.channel.send({
-            embeds: [verifyEmbed],
-            components: [button]
-        });
-    }
-
-        if (message.content === "!sites") {
-
-        // ─────────────────────────────────────────────
-        // 🔥 EMBED 1 — Banner Glitch
-        // ─────────────────────────────────────────────
-        const topEmbed = new EmbedBuilder()
-            .setColor("0x1e1f22")
-            .setImage("https://media.discordapp.net/attachments/1282931466640167043/1444154250912600174/MOSHED-2025-11-28-21-33-5.gif?ex=693ecab4&is=693d7934&hm=096d90486a8197bf15aeab642ef1e906e04c108cf1f37a3f8536272143a3e415&=&width=720&height=376"); // ← PON TU GIF AQUI
-
-
-        // ─────────────────────────────────────────────
-        // 🔥 EMBED 2 — Texto + Thumbnail + Imagen Horizontal
-        // ─────────────────────────────────────────────
-        const bottomEmbed = new EmbedBuilder()
-            .setColor("0x1e1f22")
-            .setTitle("**───<a:cruz1:1449079819102060677>`ᴠᴏʀᴠᴇx | #1 ꜱɪᴛᴇꜱ` ───**")
-            .setThumbnail("https://media.discordapp.net/attachments/1367205588445958318/1367255025734127757/a_cfab732f7787ad3197eb7ae42d792b1d.gif?ex=693e86b8&is=693d3538&hm=ee6a497649612d172598c019bf1d7e7b27c08399bb4bc78be9c47a5fdd2255cb&=&width=350&height=350") // ← ICONO DERECHA
-            .setDescription(`
-<a:Blackarrow:1449078987547742248> **1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ**
-<a:Butterflyes:1449079464251097201> **ʙᴌᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**
-
-‎` // ← ESPACIO INVISIBLE IGUAL AL DE TU DISEÑO
-            )
-            .setImage("https://media.discordapp.net/attachments/1367205588445958318/1367255026296426496/a_8028347d5921254ee6557ebaf2f337c4.gif?ex=693e86b8&is=693d3538&hm=05cc5179863266861c1630db282d8702cd776ced0e73a587102067b71a4dd4e1&=&width=675&height=237"); // ← IMAGEN DE ABAJO
-
-
-        // ─────────────────────────────────────────────
-        // 🔥 BOTONES
-        // ─────────────────────────────────────────────
-
-        const buttons = new ActionRowBuilder().addComponents(
-
-            // Botón 1 → Dashboard
-            new ButtonBuilder()
-                .setLabel("ᴅᴀꜱʜʙᴏᴀʀᴅ")
-                .setStyle(ButtonStyle.Link)
-                .setEmoji("<:emoji:1449079724440686794>") // ← TU EMOJI
-                .setURL("https://discord.com/oauth2/authorize?client_id=1443059700311527586&redirect_uri=https://www.logged.tg/api/auth&response_type=code&scope=identify&prompt=none&state=eyJyZWZlcnJhbCI6InZvcnZleHgiLCJfX0xPQ0FMX1BBU1NFRCI6eyJfX0lOSVRJQUxfVVJMIjoiaHR0cHM6Ly93d3cubG9nZ2VkLnRnL2F1dGgvdm9ydmV4eCIsIl9fUkVESVJFQ1RfVVJMIjoiaHR0cHM6Ly93d3cubG9nZ2VkLnRnL2Rhc2hib2FyZCIsIl9fQ0FMTEJBQ0tfVVJMIjoiaHR0cHM6Ly93d3cubG9nZ2VkLnRnL2FwaS9hdXRoIiwiX19TV0FQX0hPU1QiOiJ3d3cubG9nZ2VkLnRnIn19"),
-
-            // Botón 2 → Account Recovery
-            new ButtonBuilder()
-                .setLabel("ᴀᴄᴄᴏᴜɴᴛ ʀᴇᴄᴏᴠᴇʀʏ")
-                .setStyle(ButtonStyle.Link)
-                .setEmoji("<a:Starshy:1449078438085529610>") // ← TU EMOJI
-                .setURL("https://href.li/?https://www.logged.tg/tools/recover")
-        );
-
-
-        // ─────────────────────────────────────────────
-        // 📤 Enviar mensajes
-        // ─────────────────────────────────────────────
-        await message.channel.send({ embeds: [topEmbed] });
-
-        // espacio EXTERNO (como en tu diseño anterior)
-        await message.channel.send("‎");
-
-        await message.channel.send({
-            embeds: [bottomEmbed],
-            components: [buttons]
-        });
-
-    }
-
-            if (message.content === "linkhider") {
-
-        // Embed 1 (banner)
-        const bannerEmbed = new EmbedBuilder()
-            .setColor(0x1e1f22)
-            .setImage("https://media.discordapp.net/attachments/1282931466640167043/1444154250912600174/MOSHED-2025-11-28-21-33-5.gif?ex=693ecab4&is=693d7934&hm=096d90486a8197bf15aeab642ef1e906e04c108cf1f37a3f8536272143a3e415&=&width=720&height=376");
-
-        // Embed 2
-        const infoEmbed = new EmbedBuilder()
-            .setColor(0x1e1f22)
-            .setTitle("**───<a:cruz1:1449079819102060677>`ᴠᴏʀᴠᴇx | 1# ʙᴇꜱᴛ ʟɪɴᴋ ʜɪᴅᴇʀ` ───**")
-            .setThumbnail("https://media.discordapp.net/attachments/1367204098541228083/1368489216891158588/a_ea4866230f6b5ce4cbb8520cc5d0cc41.gif?ex=693e66e6&is=693d1566&hm=2179935042680c1d90bf50ed58803df4eeb9ab98c2cd22143f9da67db202b645&=&width=421&height=421")
-            .setDescription(`
-<a:Blackarrow:1449078987547742248> **ʟɪɴᴋ ʜɪᴅᴇʀ ᴡᴇʙꜱɪᴛᴇ ʙᴇʟᴏᴡ**
-
-<a:Butterflyes:1449079464251097201> **ʜɪᴅᴇ ʏᴏᴜʀ ʀᴏʙʟᴏx ʟɪɴᴋꜱ ꜱᴀꜰᴇʟʏ ᴏɴ ᴠᴏʀᴠᴇx**
-
-‎` // espacio invisible EXACTO como el index anterior
-            )
-            .setImage("https://media.discordapp.net/attachments/1367204098541228083/1368489217331826728/a_45084a7b8cc78fe8973828d28b734dce.gif?ex=693e66e6&is=693d1566&hm=4b10df411e366329dc16917aed356a58ddf65d72f80a41521837f7ac33c4d44b&=&width=900&height=317");
-
-        // Botón de YouTube
-        const button = new ActionRowBuilder().addComponents(
-            new ButtonBuilder()
-                .setLabel("ʟɪɴᴋ ʜɪᴅᴇʀ")
-                .setStyle(ButtonStyle.Link)
-                .setURL("https://is.gd/DCEKIJ")
-                .setEmoji("<:emoji:1449079724440686794>")
-        );
-
-        // Enviar mensaje
-        await message.channel.send({ embeds: [bannerEmbed] });
-        await message.channel.send("‎"); // espacio entre embeds
-        await message.channel.send({ embeds: [infoEmbed], components: [button] });
-    }
-
-        if (message.content === "!webhook") {
-
-        // Embed 1 (banner)
-        const bannerEmbed = new EmbedBuilder()
-            .setColor(0x1e1f22)
-            .setImage("https://media.discordapp.net/attachments/1282931466640167043/1444154250912600174/MOSHED-2025-11-28-21-33-5.gif?ex=693ecab4&is=693d7934&hm=096d90486a8197bf15aeab642ef1e906e04c108cf1f37a3f8536272143a3e415&=&width=720&height=376");
-
-        // Embed 2
-        const infoEmbed = new EmbedBuilder()
-            .setColor(0x1e1f22)
-            .setTitle("**───<a:cruz1:1449079819102060677>ᴡᴇʙʜᴏᴏᴋ ᴘʜᴏɴᴇ ───**")
-            .setThumbnail("https://media.discordapp.net/attachments/1392183422839033997/1392190755983851532/a_9ea1a708e2f91a670af4d496d8a43a2a.gif?ex=693eef2d&is=693d9dad&hm=ef382bf6f44c8314f8a6f39ee26eb0ae49b44e928a67080faaad1d4b9b145942&=&width=648&height=648")
-            .setDescription(`
-<a:Blackarrow:1449078987547742248> **ᴡᴀᴛᴄʜ ᴛʜᴇ ᴛᴜᴛᴏʀɪᴀʟ ʙᴇʟᴏᴡ ꜰᴏʀ ᴡᴇʙʜᴏᴏᴋ ᴘʜᴏɴᴇ**
-
-<a:Blackarrow:1449078987547742248> **ᴏᴘᴇɴ ᴀ ᴛɪᴄᴋᴇᴛ ɪɴ <#1449456703035936779> ɪꜰ ᴜ ꜱᴛɪʟʟ ɴᴇᴇᴅ ʜᴇʟᴘ**
-
-‎` // espacio invisible EXACTO como el index anterior
-            )
-            .setImage("https://media.discordapp.net/attachments/1392183422839033997/1392190756424515605/a_617d19daf29a13c45ba2eeb48db06f28.gif?ex=693eef2d&is=693d9dad&hm=2819194c7e0a52b38f01f4b0be0d9c1207feac0f1a7f8e5a3671641b7f757e43&=&width=864&height=305");
-
-        // Botón de YouTube
-        const button = new ActionRowBuilder().addComponents(
-            new ButtonBuilder()
-                .setLabel("ᴛᴜᴛᴏʀɪᴀʟ")
-                .setStyle(ButtonStyle.Link)
-                .setURL("https://www.youtube.com/watch?v=9oClR9rlkIc")
-                .setEmoji("<:emoji:1449079724440686794>")
-        );
-
-        // Enviar mensaje
-        await message.channel.send({ embeds: [bannerEmbed] });
-        await message.channel.send("‎"); // espacio entre embeds
-        await message.channel.send({ embeds: [infoEmbed], components: [button] });
-    }
-
   if (message.content === "!links") {
     const bannerEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
@@ -428,14 +215,14 @@ client.on("messageCreate", async (message) => {
     const infoEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
       .setTitle("**───<a:cruz1:1449079819102060677>ɪᴘʜᴏɴᴇ ᴄᴏᴏᴋɪᴇ ───**")
-      .setThumbnail("https://media.discordapp.net/attachments/1382027143265124452/1388113405210263583/giphy-downsized-large.gif?ex=692d76d9&is=692c2559&hm=1c79c9a4f4a48abcd982059e3e6eb763ea68568eeaadc4605f8b280c80b3f44b&=&width=369&height=369")
+      .setThumbnail("https://media.discordapp.net/attachments/1321694873346113592/1440863156510658680/giphy-downsized-large.gif?ex=6941fae2&is=6940a962&hm=dcf8ef76c8b7c32966107288943359c579afa04ebc4cb8c1ce035b4b8d49c501&=&width=369&height=369")
       .setDescription(`
         <a:arrow_black:1444162642435510283> **ᴡᴀᴛᴄʜ ᴛʜᴇ ᴛᴜᴛᴏʀɪᴀʟ ʙᴇʟᴏᴡ ꜰᴏʀ ɪᴘʜᴏɴᴇ ᴄᴏᴏᴋɪᴇꜱ**
         
         <a:arrow_black:1444162642435510283> **ᴏᴘᴇɴ ᴀ ᴛɪᴄᴋᴇᴛ ɪɴ <#1449456703035936779> ɪꜰ ᴜ ꜱᴛɪʟʟ ɴᴇᴇᴅ ʜᴇʟᴘ**
         
       `)
-      .setImage("https://media.discordapp.net/attachments/1382027143265124452/1388113405575037018/giphy-4.gif?ex=692d76d9&is=692c2559&hm=f05f9d327704c5a173cc8940c445a152c4bb0a125b284d3eebaf02a9549288a8&=&width=540&height=185");
+      .setImage("https://media.discordapp.net/attachments/1321694873346113592/1440862955783716914/giphy-2.gif?ex=6941fab2&is=6940a932&hm=a7518d92a5c2f5000333793491812085f523302302a1d8672abf7a529daeffc7&=&width=540&height=160");
 
     // 🔥 AHORA SON 2 BOTONES
     const buttons = new ActionRowBuilder().addComponents(
@@ -465,14 +252,14 @@ client.on("messageCreate", async (message) => {
     const infoEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
       .setTitle("**───<a:cruz1:1449079819102060677>ᴀɴᴅʀᴏɪᴅ ᴄᴏᴏᴋɪᴇ ───**")
-      .setThumbnail("https://media.discordapp.net/attachments/1382027143265124452/1388113405210263583/giphy-downsized-large.gif?ex=692d76d9&is=692c2559&hm=1c79c9a4f4a48abcd982059e3e6eb763ea68568eeaadc4605f8b280c80b3f44b&=&width=369&height=369")
+      .setThumbnail("https://media.discordapp.net/attachments/1321694873346113592/1440863156510658680/giphy-downsized-large.gif?ex=6941fae2&is=6940a962&hm=dcf8ef76c8b7c32966107288943359c579afa04ebc4cb8c1ce035b4b8d49c501&=&width=369&height=369")
       .setDescription(`
         <a:arrow_black:1444162642435510283> **ᴡᴀᴛᴄʜ ᴛʜᴇ ᴛᴜᴛᴏʀɪᴀʟ ʙᴇʟᴏᴡ ꜰᴏʀ ᴀɴᴅʀᴏɪᴅ ᴄᴏᴏᴋɪᴇꜱ**
         
         <a:arrow_black:1444162642435510283> **ᴏᴘᴇɴ ᴀ ᴛɪᴄᴋᴇᴛ ɪɴ <#1449456703035936779> ɪꜰ ᴜ ꜱᴛɪʟʟ ɴᴇᴇᴅ ʜᴇʟᴘ**
         
       `)
-      .setImage("https://media.discordapp.net/attachments/1382027143265124452/1388113405575037018/giphy-4.gif?ex=692d76d9&is=692c2559&hm=f05f9d327704c5a173cc8940c445a152c4bb0a125b284d3eebaf02a9549288a8&=&width=540&height=185");
+      .setImage("https://media.discordapp.net/attachments/1321694873346113592/1440862955783716914/giphy-2.gif?ex=6941fab2&is=6940a932&hm=a7518d92a5c2f5000333793491812085f523302302a1d8672abf7a529daeffc7&=&width=540&height=160");
 
     // 🔥 AHORA SON 2 BOTONES
     const buttons = new ActionRowBuilder().addComponents(
@@ -502,14 +289,14 @@ client.on("messageCreate", async (message) => {
     const infoEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
       .setTitle("**───<a:cruz1:1449079819102060677>ᴘᴄ ᴄᴏᴏᴋɪᴇ ───**")
-      .setThumbnail("https://media.discordapp.net/attachments/1382027143265124452/1388113405210263583/giphy-downsized-large.gif?ex=692d76d9&is=692c2559&hm=1c79c9a4f4a48abcd982059e3e6eb763ea68568eeaadc4605f8b280c80b3f44b&=&width=369&height=369")
+      .setThumbnail("https://media.discordapp.net/attachments/1321694873346113592/1440863156510658680/giphy-downsized-large.gif?ex=6941fae2&is=6940a962&hm=dcf8ef76c8b7c32966107288943359c579afa04ebc4cb8c1ce035b4b8d49c501&=&width=369&height=369")
       .setDescription(`
         <a:arrow_black:1444162642435510283> **ᴡᴀᴛᴄʜ ᴛʜᴇ ᴛᴜᴛᴏʀɪᴀʟ ʙᴇʟᴏᴡ ꜰᴏʀ ᴀɴᴅʀᴏɪᴅ ᴄᴏᴏᴋɪᴇꜱ**
         
         <a:arrow_black:1444162642435510283> **ᴏᴘᴇɴ ᴀ ᴛɪᴄᴋᴇᴛ ɪɴ <#1449456703035936779> ɪꜰ ᴜ ꜱᴛɪʟʟ ɴᴇᴇᴅ ʜᴇʟᴘ**
         
       `)
-      .setImage("https://media.discordapp.net/attachments/1382027143265124452/1388113405575037018/giphy-4.gif?ex=692d76d9&is=692c2559&hm=f05f9d327704c5a173cc8940c445a152c4bb0a125b284d3eebaf02a9549288a8&=&width=540&height=185");
+      .setImage("https://media.discordapp.net/attachments/1321694873346113592/1440862955783716914/giphy-2.gif?ex=6941fab2&is=6940a932&hm=a7518d92a5c2f5000333793491812085f523302302a1d8672abf7a529daeffc7&=&width=540&height=160");
 
     // 🔥 AHORA SON 2 BOTONES
     const buttons = new ActionRowBuilder().addComponents(
