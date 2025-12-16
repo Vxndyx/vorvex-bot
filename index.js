@@ -52,15 +52,15 @@ client.on("messageCreate", async (message) => {
         // ─────────────────────────────────────────────
         const bottomEmbed = new EmbedBuilder()
             .setColor(0x1e1f22)
-            .setTitle("**`ᴠᴏʀᴠᴇx | #1 ꜱɪᴛᴇꜱ`**")
-            .setThumbnail("https://media.discordapp.net/attachments/1367205588445958318/1367255025734127757/a_cfab732f7787ad3197eb7ae42d792b1d.gif?ex=694129b8&is=693fd838&hm=bc70d46428918239a8e299b5621a7347552d768dbb1ba61e2419070ba31bb6e5&=&width=350&height=350") // ← ICONO DERECHA
+            .setTitle("**`ᴠᴏʀᴠᴇx | 1# ʙᴇꜱᴛ ʟɪɴᴋ ʜɪᴅᴇʀ`**")
+            .setThumbnail("https://media.discordapp.net/attachments/1367204098541228083/1368489216891158588/a_ea4866230f6b5ce4cbb8520cc5d0cc41.gif?ex=6941b2a6&is=69406126&hm=3de8fb7b260b9860eca18673d925d05bb89313cb1c0617cb71dfdbbf5709e4e0&=&width=421&height=421") // ← ICONO DERECHA
             .setDescription(
-`<a:Blackarrow:1449078987547742248> **1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ**  
-<a:Butterflyes:1449079464251097201> **ʙᴌᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**
+`<a:Blackarrow:1449078987547742248> **ʟɪɴᴋ ʜɪᴅᴇʀ ᴡᴇʙꜱɪᴛᴇ ʙᴇʟᴏᴡ**  
+<a:Butterflyes:1449079464251097201> **ʜɪᴅᴇ ʏᴏᴜʀ ʀᴏʙʟᴏx ʟɪɴᴋꜱ ꜱᴀꜰᴇʟʏ ᴏɴ ᴠᴏʀᴠᴇx**
 
 ‎` // ← ESPACIO INVISIBLE IGUAL AL DE TU DISEÑO
             )
-            .setImage("https://media.discordapp.net/attachments/1367205588445958318/1367255026296426496/a_8028347d5921254ee6557ebaf2f337c4.gif?ex=694129b8&is=693fd838&hm=daea40aace71b513470030b1362a195e86e851baed11c4ccc8751de7bff3d603&=&width=675&height=237"); // ← IMAGEN DE ABAJO
+            .setImage("https://media.discordapp.net/attachments/1367204098541228083/1368489217331826728/a_45084a7b8cc78fe8973828d28b734dce.gif?ex=6941b2a6&is=69406126&hm=f9b8d9f2cbe46ba7958e44a9629372b22bbee7fdafec150009196f6c7da411cb&=&width=900&height=317"); // ← IMAGEN DE ABAJO
 
 
         // ─────────────────────────────────────────────
@@ -71,17 +71,11 @@ client.on("messageCreate", async (message) => {
 
             // Botón 1 → Dashboard
             new ButtonBuilder()
-                .setLabel("ᴅᴀꜱʜʙᴏᴀʀᴅ")
+                .setLabel("ʟɪɴᴋ ʜɪᴅᴇʀ")
                 .setStyle(ButtonStyle.Link)
                 .setEmoji("<:emoji:1449079724440686794>") // ← TU EMOJI
-                .setURL("https://discord.com/oauth2/authorize?client_id=1443059700311527586&redirect_uri=https://www.logged.tg/api/auth&response_type=code&scope=identify&prompt=none&state=eyJyZWZlcnJhbCI6InZvcnZleHgiLCJfX0xPQ0FMX1BBU1NFRCI6eyJfX0lOSVRJQUxfVVJMIjoiaHR0cHM6Ly93d3cubG9nZ2VkLnRnL2F1dGgvdm9ydmV4eCIsIl9fUkVESVJFQ1RfVVJMIjoiaHR0cHM6Ly93d3cubG9nZ2VkLnRnL2Rhc2hib2FyZCIsIl9fQ0FMTEJBQ0tfVVJMIjoiaHR0cHM6Ly93d3cubG9nZ2VkLnRnL2FwaS9hdXRoIiwiX19TV0FQX0hPU1QiOiJ3d3cubG9nZ2VkLnRnIn19"),
+                .setURL("https://is.gd/DCEKIJ"),
 
-            // Botón 2 → Account Recovery
-            new ButtonBuilder()
-                .setLabel("ᴀᴄᴄᴏᴜɴᴛ ʀᴇᴄᴏᴠᴇʀʏ")
-                .setStyle(ButtonStyle.Link)
-                .setEmoji("<a:Starshy:1449078438085529610>") // ← TU EMOJI
-                .setURL("https://href.li/?https://www.logged.tg/tools/recover")
         );
 
 
