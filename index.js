@@ -29,6 +29,7 @@ const client = new Client({
 });
 
 // ID del rol que podrá ver los tickets
+const SUPPORT_CHANNEL_ID = "1449456703035936779";
 const SUPPORT_ROLE = "1449054358736998406";
 
 client.once("ready", () => {
@@ -477,22 +478,16 @@ client.on("messageCreate", async (message) => {
         });
     }
 
-  if (message.content === "!sendpanel") {
-
-        // Guardar la categoría del panel
-        const supportChannel = message.guild.channels.cache.get(SUPPORT_CHANNEL_ID);
-        global.ticketCategory = supportChannel?.parentId || null;
-
+    if (message.content === "!sendpanel") {
 
         const topImage = new EmbedBuilder()
             .setColor(0x1e1f22)
-            .setImage("https://images-ext-1.discordapp.net/external/fCF7XXecyCVrFsiAsRvIe3fLNQukpRxBLCbhx-W3Yr4/%3Fwidth%3D576%26height%3D288/https/images-ext-1.discordapp.net/external/1qrfSndKY0FVypqDi2XPYN7HHSzYtg2RbTkpQSnz25E/%253Fsize%253D512/https/cdn.discordapp.com/banners/686080969018572801/a_e4703171585577d63e74d4284c4123cf.gif?width=576&height=288");
+            .setImage("https://images-ext-1.discordapp.net/external/oEv0RfZOHiuTa8tFrMICdSVoCDQZHOPlQTEi9crb5uw/%3Fwidth%3D576%26height%3D288/https/images-ext-1.discordapp.net/external/fCF7XXecyCVrFsiAsRvIe3fLNQukpRxBLCbhx-W3Yr4/%253Fwidth%253D576%2526height%253D288/https/images-ext-1.discordapp.net/external/1qrfSndKY0FVypqDi2XPYN7HHSzYtg2RbTkpQSnz25E/%25253Fsize%25253D512/https/cdn.discordapp.com/banners/686080969018572801/a_e4703171585577d63e74d4284c4123cf.gif?width=576&height=288");
 
         const panelEmbed = new EmbedBuilder()
             .setColor(0x1e1f22)
-            .setTitle(`**─── <:Nistar:1449077184969834526> SUPPORT ───**`)
-            .setDescription(`**<:cruz:1449079648905330888> ᴘʟᴇᴀꜱᴇ ᴄʜᴏᴏꜱᴇ ᴀ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴏɴ ᴡʜᴀᴛ ꜱᴜᴘᴘᴏʀᴛ ʏᴏᴜ ɴᴇᴇᴅ**`)
-            .setImage("https://media.discordapp.net/attachments/1017600005764284497/1415662667720556587/Tumblr_l_76198603461233.gif?ex=692cd559&is=692b83d9&hm=8ded984aac47264eb3f5a0239e0cd767f3c88ce0edb68b09cff73bec54dcc7f7&=&width=1440&height=79");
+            .setTitle("**─── <:Nistar:1449077184969834526> SUPPORT ───**")
+            .setDescription("**<:cruz:1449079648905330888> ᴘʟᴇᴀꜱᴇ ᴄʜᴏᴏꜱᴇ ᴀ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴏɴ ᴡʜᴀᴛ ꜱᴜᴘᴘᴏʀᴛ ʏᴏᴜ ɴᴇᴇᴅ**");
 
         const button = new ActionRowBuilder().addComponents(
             new ButtonBuilder()
@@ -502,9 +497,11 @@ client.on("messageCreate", async (message) => {
                 .setEmoji("<:emoji:1449079724440686794>")
         );
 
-        await message.channel.send({ embeds: [topImage, panelEmbed], components: [button] });
-     }
-
+        await message.channel.send({
+            embeds: [topImage, panelEmbed],
+            components: [button]
+        });
+    }
 });
 
 // 🔥 VIDEOS MP4 DIFERENTES
@@ -622,113 +619,92 @@ const SERVERS = {
 // 📌 CREAR TICKET (MENÚ SELECT)
 // ====================================================================
 client.on("interactionCreate", async (interaction) => {
-    if (!interaction.isButton()) return;
 
-    if (interaction.customId === "open_ticket_options") {
+    // BOTÓN OPEN TICKET
+    if (interaction.isButton() && interaction.customId === "open_ticket_options") {
 
-        const setupEmbed = new EmbedBuilder()
+        const embed = new EmbedBuilder()
             .setColor(0x1e1f22)
-            .setImage("https://media.discordapp.net/attachments/1367456715284676668/1426564118625652907/IMG_4793.gif");
+            .setImage("https://media.discordapp.net/attachments/1367456715284676668/1426564118625652907/IMG_4793.gif?ex=6942091e&is=6940b79e&hm=6446d51c3d6178a024541adeb47212270fcc23219842472bba3f1e037252f5c7&=&width=563&height=198");
 
         const menu = new ActionRowBuilder().addComponents(
             new StringSelectMenuBuilder()
                 .setCustomId("ticket_type_select")
                 .setPlaceholder("ꜱᴇʟᴇᴄᴛ ᴛɪᴄᴋᴇᴛ ᴛʏᴘᴇ...")
                 .addOptions([
-                    {
-                        label: "ʟɪɴᴋꜱ",
-                        value: "links",
-                        description: "ᴏᴘᴇɴ ᴛɪᴄᴋᴇᴛ ꜰᴏʀ ʜᴇʟᴘ ᴡɪᴛʜ ʟɪɴᴋꜱ",
-                        emoji: "<a:cruz1:1449079819102060677>"
-                    },
-                    {
-                        label: "ᴍᴇᴛʜᴏᴅꜱ",
-                        value: "methods",
-                        description: "ᴏᴘᴇɴ ᴛɪᴄᴋᴇᴛ ꜰᴏʀ ʜᴇʟᴘ ᴡɪᴛʜ ᴍᴇᴛʜᴏᴅꜱ",
-                        emoji: "<a:Butterflyes:1449079464251097201>"
-                    },
-                    {
-                        label: "ᴏᴛʜᴇʀꜱ",
-                        value: "others",
-                        description: "ᴏᴘᴇɴ ᴛɪᴄᴋᴇᴛ ꜰᴏʀ ᴏᴛʜᴇʀ ʜᴇʟᴘ",
-                        emoji: "<a:Starshy:1449078438085529610>"
-                    }
+                    { label: "ʟɪɴᴋꜱ", value: "links", description: "ᴏᴘᴇɴ ᴛɪᴄᴋᴇᴛ ꜰᴏʀ ʜᴇʟᴘ ᴡɪᴛʜ ʟɪɴᴋꜱ" },
+                    { label: "ᴍᴇᴛʜᴏᴅꜱ", value: "methods", description: "ᴏᴘᴇɴ ᴛɪᴄᴋᴇᴛ ꜰᴏʀ ʜᴇʟᴘ ᴡɪᴛʜ ᴍᴇᴛʜᴏᴅꜱ" },
+                    { label: "ᴏᴛʜᴇʀꜱ", value: "others", description: "ᴏᴘᴇɴ ᴛɪᴄᴋᴇᴛ ꜰᴏʀ ᴏᴛʜᴇʀ ʜᴇʟᴘ" }
                 ])
         );
 
-        await interaction.reply({ embeds: [setupEmbed], components: [menu], ephemeral: true });
+        await interaction.reply({
+            embeds: [embed],
+            components: [menu],
+            ephemeral: true
+        });
     }
-});
 
-// ==========================
-// CREAR EL CANAL PRIVADO SEGÚN LA OPCIÓN
-// ==========================
-client.on("interactionCreate", async (interaction) => {
-    if (!interaction.isStringSelectMenu()) return;
-    if (interaction.customId !== "ticket_type_select") return;
+    // SELECT MENU
+    if (interaction.isStringSelectMenu() && interaction.customId === "ticket_type_select") {
 
-    const type = interaction.values[0];
-    const user = interaction.user;
+        const user = interaction.user;
+        const type = interaction.values[0];
 
-    const channel = await interaction.guild.channels.create({
-        name: `${user.username}-${type}`,
-        type: ChannelType.GuildText,
-        parent: interaction.channel.parentId,
-        permissionOverwrites: [
-            {
-                id: interaction.guild.id,
-                deny: [PermissionsBitField.Flags.ViewChannel]
-            },
-            {
-                id: user.id,
-                allow: [PermissionsBitField.Flags.ViewChannel, PermissionsBitField.Flags.SendMessages]
-            },
-            {
-                id: SUPPORT_ROLE,
-                allow: [PermissionsBitField.Flags.ViewChannel, PermissionsBitField.Flags.SendMessages]
-            }
-        ]
-    });
+        const supportChannel = interaction.guild.channels.cache.get(SUPPORT_CHANNEL_ID);
+        const categoryId = supportChannel.parentId;
 
-    await interaction.reply({ content: `Your ticket is open: <#${channel.id}>`, ephemeral: true });
-
-    const ticketEmbed = new EmbedBuilder()
-        .setColor(0x1e1f22)
-        .setTitle("**<:cruz:1449079648905330888> Welcome to Vorvex**")
-        .setDescription(`Welcome <@${user.id}>!
-Please describe what you need help with and wait for a support member to assist you.`)
-        .setImage("https://media.discordapp.net/attachments/1017600005764284497/1415662667720556587/Tumblr_l_76198603461233.gif")
-        .setFooter({ 
-            text: `Ticket Opened By ${user.username}`,
-            iconURL: client.user.displayAvatarURL({ dynamic: true, size: 512 })
+        const channel = await interaction.guild.channels.create({
+            name: `${user.username}-${type}`,
+            type: ChannelType.GuildText,
+            parent: categoryId,
+            permissionOverwrites: [
+                {
+                    id: interaction.guild.id,
+                    deny: [PermissionsBitField.Flags.ViewChannel]
+                },
+                {
+                    id: user.id,
+                    allow: [PermissionsBitField.Flags.ViewChannel, PermissionsBitField.Flags.SendMessages]
+                },
+                {
+                    id: SUPPORT_ROLE,
+                    allow: [PermissionsBitField.Flags.ViewChannel, PermissionsBitField.Flags.SendMessages]
+                }
+            ]
         });
 
-    const closeButton = new ActionRowBuilder().addComponents(
-        new ButtonBuilder()
-            .setCustomId("close_ticket")
-            .setLabel("ᴄʟᴏꜱᴇ ᴛɪᴄᴋᴇᴛ")
-            .setStyle(ButtonStyle.Secondary)   // ← GRIS OSCURO
-            .setEmoji("<:emoji:1449079724440686794>")
-    );
+        await interaction.reply({
+            content: `Your ticket is open: <#${channel.id}>`,
+            ephemeral: true
+        });
 
-    // Mención corregida del rol
-    await channel.send({ content: `<@&${SUPPORT_ROLE}>`, embeds: [ticketEmbed], components: [closeButton] });
-});
+        const ticketEmbed = new EmbedBuilder()
+            .setColor(0x1e1f22)
+            .setTitle("**<:cruz:1449079648905330888> Welcome to Vorvex**")
+            .setDescription(`Welcome <@${user.id}>\nPlease describe what you need help with and wait for a support member to assist you.`)
+            .setFooter({ text: `Ticket opened by ${user.username}` });
 
-// ==========================
-// CERRAR EL TICKET
-// ==========================
-client.on("interactionCreate", async (interaction) => {
-    if (!interaction.isButton()) return;
-    if (interaction.customId !== "close_ticket") return;
+        const closeBtn = new ActionRowBuilder().addComponents(
+            new ButtonBuilder()
+                .setCustomId("close_ticket")
+                .setLabel("ᴄʟᴏꜱᴇ ᴛɪᴄᴋᴇᴛ")
+                .setStyle(ButtonStyle.Secondary)
+                .setEmoji("<:emoji:1449079724440686794>")
+        );
 
-    const channel = interaction.channel;
+        await channel.send({
+            content: `<@&${SUPPORT_ROLE}>`,
+            embeds: [ticketEmbed],
+            components: [closeBtn]
+        });
+    }
 
-    await interaction.reply({ content: "Closing ticket in 3 seconds…", ephemeral: true });
-
-    setTimeout(() => {
-        channel.delete().catch(() => {});
-    }, 3000);
+    // CLOSE TICKET
+    if (interaction.isButton() && interaction.customId === "close_ticket") {
+        await interaction.reply({ content: "Closing ticket...", ephemeral: true });
+        setTimeout(() => interaction.channel.delete().catch(() => {}), 3000);
+    }
 });
 
 client.login(process.env.TOKEN);
