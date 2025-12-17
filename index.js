@@ -52,14 +52,14 @@ client.on("messageCreate", async (message) => {
         // ─────────────────────────────────────────────
         const bottomEmbed = new EmbedBuilder()
             .setColor(0x1e1f22)
-            .setTitle("**───<a:cruz1:1449079819102060677>`ᴠᴏʀᴠᴇx | #1 ʟɪɴᴋ ʜɪᴅᴇʀ ───`**")
-            .setThumbnail("https://media.discordapp.net/attachments/1367204098541228083/1368489216891158588/a_ea4866230f6b5ce4cbb8520cc5d0cc41.gif?ex=694455a6&is=69430426&hm=150bed0e8a27d9e9cf9ba6a370147ae92e72d4a2b1993130612d3aac9fc54821&=&width=421&height=421") // ← ICONO DERECHA
+            .setTitle("**───<a:cruz1:1449079819102060677>ᴡᴇʙʜᴏᴏᴋ ᴘʜᴏɴᴇ ───**")
+            .setThumbnail("https://media.discordapp.net/attachments/1392183422839033997/1392190755983851532/a_9ea1a708e2f91a670af4d496d8a43a2a.gif?ex=6944352d&is=6942e3ad&hm=cd42998b0f595e3b645fa4830c6bfc750be5b179af72fe024969d54025944df8&=&width=648&height=648") // ← ICONO DERECHA
             .setDescription(
-`<a:gunlove:1449079953244160093> **ʟɪɴᴋ ʜɪᴅᴇʀ ᴡᴇʙꜱɪᴛᴇ ʙᴇʟᴏᴡ**
+`<a:Blackarrow:1449078987547742248> **ᴡᴀᴛᴄʜ ᴛʜᴇ ᴛᴜᴛᴏʀɪᴀʟ ʙᴇʟᴏᴡ ꜰᴏʀ ᴡᴇʙʜᴏᴏᴋ ᴘʜᴏɴᴇ**
 
-<a:Butterflyes:1449079464251097201> **ᴡɪᴅᴇ ᴠᴀʀɪᴇᴛʏ ᴏꜰ ꜰᴜɴᴄᴛɪᴏɴᴀʟ ꜱʜᴏʀᴛᴇɴᴇʀꜱ**
+<a:Blackarrow:1449078987547742248> **ᴏᴘᴇɴ ᴀ ᴛɪᴄᴋᴇᴛ ɪɴ <#1449456703035936779> ɪꜰ ᴜ ꜱᴛɪʟʟ ɴᴇᴇᴅ ʜᴇʟᴘ**
 `)
-            .setImage("https://media.discordapp.net/attachments/1367204098541228083/1368489217331826728/a_45084a7b8cc78fe8973828d28b734dce.gif?ex=694455a6&is=69430426&hm=41e9785b7839c459ec763424ae9215d14b171f5ee46f540846d286cb15d49a9d&=&width=900&height=317"); // ← IMAGEN DE ABAJO
+            .setImage("https://media.discordapp.net/attachments/1392183422839033997/1392190756424515605/a_617d19daf29a13c45ba2eeb48db06f28.gif?ex=6944352d&is=6942e3ad&hm=6222e70f3c15bd9de2652bc3b8c439363c1bbeb68588ac94d9737cb5e3cca0e5&=&width=864&height=305"); // ← IMAGEN DE ABAJO
 
 
         // ─────────────────────────────────────────────
@@ -70,10 +70,10 @@ client.on("messageCreate", async (message) => {
 
             // Botón 1 → Dashboard
             new ButtonBuilder()
-                .setLabel("ʟɪɴᴋ ʜɪᴅᴇʀ")
+                .setLabel("ᴛᴜᴛᴏʀɪᴀʟ")
                 .setStyle(ButtonStyle.Link)
                 .setEmoji("<:emoji:1449079724440686794>") // ← TU EMOJI
-                .setURL("https://is.gd/DCEKIJ"),
+                .setURL("https://www.youtube.com/watch?v=9oClR9rlkIc"),
         );
 
 
