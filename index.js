@@ -55,7 +55,8 @@ client.on("messageCreate", async (message) => {
             .setTitle("**───<a:cruz1:1449079819102060677>`ᴠᴏʀᴠᴇx | #1 ꜱɪᴛᴇꜱ` ───**")
             .setThumbnail("https://media.discordapp.net/attachments/1367205588445958318/1367255025734127757/a_cfab732f7787ad3197eb7ae42d792b1d.gif?ex=694faa38&is=694e58b8&hm=14d846f5d0322a85fed3f3eedfe8c2531a2e8208fcdb1647c00b5d7d6d9227dc&=&width=350&height=350") // ← ICONO DERECHA
             .setDescription(
-`<a:gunlove:1449079953244160093> **1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ**  
+`<a:gunlove:1449079953244160093> **1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ**
+  
 <a:Butterflyes:1449079464251097201> **ʙᴌᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**
 `
             )
