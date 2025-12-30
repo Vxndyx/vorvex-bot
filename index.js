@@ -15,8 +15,15 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 
-app.get("/", (req, res) => res.send("Bot online"));
-app.listen(process.env.PORT || 3000);
+const PORT = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+  res.send("Bot online 🚀");
+});
+
+app.listen(PORT, () => {
+  console.log("Servidor web activo en puerto " + PORT);
+});
 
 // ======== CLIENTE ÚNICO ========
 const client = new Client({
