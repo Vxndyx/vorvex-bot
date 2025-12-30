@@ -669,7 +669,7 @@ client.on("interactionCreate", async (interaction) => {
 
         const embed = new EmbedBuilder()
             .setColor(0x1e1f22)
-            .setImage("https://media.discordapp.net/attachments/1367456715284676668/1426564118625652907/IMG_4793.gif?ex=6942091e&is=6940b79e&hm=6446d51c3d6178a024541adeb47212270fcc23219842472bba3f1e037252f5c7&=&width=563&height=198");
+            .setImage("https://media.discordapp.net/attachments/1321694873346113592/1440826447055814757/IMG_4793.gif?ex=6954f672&is=6953a4f2&hm=0afe0e7d1ed720776130ef29796c94d8d0628175bfa1a0b35b8ad68840de4695&=");
 
         const menu = new ActionRowBuilder().addComponents(
             new StringSelectMenuBuilder()
