@@ -192,7 +192,7 @@ client.on("messageCreate", async (message) => {
 
     const infoEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
-      .setTitle("**<a:cruz1:1449079819102060677>ʟɪɴᴋꜱ ───**")
+      .setTitle("**───<a:cruz1:1449079819102060677>ʟɪɴᴋꜱ ───**")
       .setThumbnail("https://media.discordapp.net/attachments/1392183422839033997/1392190755983851532/a_9ea1a708e2f91a670af4d496d8a43a2a.gif?ex=692dcbad&is=692c7a2d&hm=984de6418bcae8f7392f23da4673b642d5df879b6f3155feee0d10ac199c6e73&=&width=648&height=648")
       .setDescription(`
         <a:arrow_black:1444162642435510283> **ᴡᴀᴛᴄʜ ᴛʜᴇ ᴛᴜᴛᴏʀɪᴀʟꜱ ʙᴇʟᴏᴡ ᴅᴇᴘᴇɴᴅɪɴɢ ᴏɴ ʏᴏᴜʀ ᴅᴇᴠɪᴄᴇ**
