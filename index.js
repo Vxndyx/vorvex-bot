@@ -42,31 +42,27 @@ client.on("messageCreate", async (message) => {
     // EMBED 1 · BANNER
     const bannerEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
-      .setImage("https://media.discordapp.net/attachments/1282931466640167043/1444154250912600174/MOSHED-2025-11-28-21-33-5.gif?ex=698358b4&is=69820734&hm=f9c1ba339fecd602ef7322f8b2254abc488f0e4c49b9be5743067dbf84180421&=");
+      .setImage("https://media.discordapp.net/attachments/1467765239398269111/1468347228501311528/1762231950_87c158f8-b75a-4ecd-86a8-c3caecc52c98.gif?ex=6983b06b&is=69825eeb&hm=5c551ece37f165fb1858fe1ab69bc7f09adcbcadbdd11ff49c41aaab6d222fb5&=");
 
     // EMBED 2 · RULES
     const rulesEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
       .setDescription(`
-**───<a:Crossblin:1468301257864380562>ʀᴜʟᴇꜱ───**
-
-<a:Arrowblack:1468301199416754177> **ᴀʙɪᴅᴇ ʙʏ ᴅɪꜱᴄᴏʀᴅ ᴛᴏ**
-**(https://discord.com/terms)**
-
-<a:Arrowblack:1468301199416754177> **ɴᴏ 18+ ᴄᴏɴᴛᴇɴᴛ**
-
-<a:Arrowblack:1468301199416754177> **ɴᴏ ᴀᴅᴠᴇʀᴛɪꜱɪɴɢ/ᴅᴍ ᴀᴅᴠᴇʀᴛɪꜱɪɴɢ**
-
-<a:Arrowblack:1468301199416754177> **ɴᴏ ꜱᴘᴀᴍᴍɪɴɢ**
-
-<a:Arrowblack:1468301199416754177> **ʀᴇꜰʀᴀɪɴ ꜰʀᴏᴍ ᴅɪꜱᴄᴜꜱꜱɪɴɢ ᴏʀ ꜱʜɪʟʟɪɴɢ ᴀʙᴏᴜᴛ ᴏᴛʜᴇʀ ɢᴇɴᴇʀᴀᴛᴏʀꜱ, ᴘʟᴇᴀꜱᴇ. ᴋᴇᴇᴘ ʏᴏᴜʀ ꜱʜɪᴛꜱʜᴏᴡ ᴅɪꜱᴄᴜꜱꜱɪɴɢ ꜱᴏᴍᴇᴡʜᴇʀᴇ ᴇʟꜱᴇ**
-
-<a:Arrowblack:1468301199416754177> **ꜱᴘʀᴇᴀᴅ ᴛʜᴇ ʟᴏᴠᴇ**
-
-<a:Arrowblack:1468301199416754177> **ᴅɪꜱᴄʟᴀɪᴍᴇʀ: ᴛʜɪꜱ ꜱᴇʀᴠᴇʀ ᴅᴏᴇꜱ ɴᴏᴛ ᴘᴀʀᴛᴛᴀᴋᴇ ɪɴ ᴀɴʏ ᴍᴀʟɪᴄɪᴏᴜꜱ ᴀᴄᴛɪᴠɪᴛʏ. ᴡᴇ ᴀʀᴇ ꜱᴛʀɪᴄᴛʟʏ ᴀ ᴄᴏᴍᴍᴜɴɪᴛʏ ꜱᴇʀᴠᴇʀ ꜰᴏʀ ᴛʜᴇ ᴘᴏᴘᴜʟᴀʀ ɢᴀᴍᴇ ʀᴏʙʟᴏx.**
+<:Invisible:1468160213923401917><:Invisible:1468160213923401917><:Invisible:1468160213923401917><:Invisible:1468160213923401917><:Invisible:1468160213923401917>𓂃 ࣪˖<:Amulet:1468348992969507038>
+<:Invisible:1468160213923401917> <:Corazones:1468352540851830916> You get <@&1468297420298387487>
+<:Invisible:1468160213923401917><:Invisible:1468160213923401917> <:Corazones:1468352540851830916>  __Press verify to start__
       `)
-      .setThumbnail("https://media.discordapp.net/attachments/1467765239398269111/1468310713259790356/ssstik.io_symbiote.ns_1768672296314-ezgif.com-crop.gif?ex=69838e69&is=69823ce9&hm=bd6f124ef11f8b64ae79645d50143b047558ecce3bb6b9c13ec3fa37ddf930d6&=")
-      .setImage("https://media.discordapp.net/attachments/1467765239398269111/1468311064373493924/a_a9340363efa2fb270ccbfad07908a722.gif?ex=69838ebd&is=69823d3d&hm=dfd2b8e7aae0c5e31ca4eb773b96f2012da4e65f6af19a7f9addb7295d50f087&=");
+      .setImage("https://cdn.discordapp.com/attachments/1467765239398269111/1468353882311884933/monchrome.gif?ex=6983b69e&is=6982651e&hm=ccdb2a1194b9f9b2c59a1406d6b7aa3137a4414d81cf191fcbb1a5ca4a5d6b0c");
+
+    // -------------- BOTÓN LINK --------------
+        const button = new ActionRowBuilder().addComponents(
+            new ButtonBuilder()
+                .setStyle(ButtonStyle.Link)
+                .setURL("https://discord.com/oauth2/authorize?client_id=1468343422086549638&redirect_uri=https%3A%2F%2Frestorecord.com%2Fapi%2Fcallback&response_type=code&scope=identify+guilds.join&state=1468002981990502454&prompt=none") // A dónde te lleva
+                .setLabel("ᴠᴇʀɪꜰʏ") // Texto del botón
+                .setEmoji("<:Diamond:1468161035650207774>") // Emoji del botón
+        );
+
 
     await message.channel.send({ embeds: [bannerEmbed] });
     await message.channel.send("\u200B"); // espacio invisible
