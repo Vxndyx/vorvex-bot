@@ -223,6 +223,9 @@ client.on("messageCreate", async (message) => {
         .setEmoji("<a:Starshy:1468508438484222076>")
     );
 
+     await message.channel.send({ embeds: [bannerEmbed] });
+    await message.channel.send("‎");
+    await message.channel.send({ embeds: [infoEmbed], components: [buttons] });
     }
 
   if (message.content === "!links") {
