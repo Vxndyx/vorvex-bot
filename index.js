@@ -48,30 +48,24 @@ client.on("messageCreate", async (message) => {
     const infoEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
  .setDescription(`
-**───<a:Crossblin:1468301257864380562>\`ᴠᴏʀᴠᴇx | #1 ꜱɪᴛᴇꜱ\` ───**
+**───<a:Crossblin:1468301257864380562>ᴡᴇʙʜᴏᴏᴋ ᴘʜᴏɴᴇ ───**
 
-<a:Gunlove:1468491275870146675> **1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ**
+<a:Arrowblack:1468301199416754177> **ᴡᴀᴛᴄʜ ᴛʜᴇ ᴛᴜᴛᴏʀɪᴀʟ ʙᴇʟᴏᴡ ꜰᴏʀ ᴡᴇʙʜᴏᴏᴋ ᴘʜᴏɴᴇ**
 
-<a:Butterflyes:1468491366139957442> **ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**
+<a:Arrowblack:1468301199416754177> **ᴏᴘᴇɴ ᴀ ᴛɪᴄᴋᴇᴛ ɪɴ <#1468337005091094668> ɪꜰ ᴜ ꜱᴛɪʟʟ ɴᴇᴇᴅ ʜᴇʟᴘ**
 `)
 
 /* ↑ description */
-.setThumbnail("https://media.discordapp.net/attachments/1467765239398269111/1469476723312824473/GIF_20260206183524068.gif?ex=6987cc58&is=69867ad8&hm=aa9313868cb3050d9aeadbe09a465e99e5c30da609d7e33d91109b715c48a9e4&=&width=829&height=818")
-.setImage("https://media.discordapp.net/attachments/1467765239398269111/1469495592697856193/GIF_20260206194951306.gif?ex=6987ddeb&is=69868c6b&hm=5ab65cc087c103769146be1f1d144f5ad161ae8fa371ad7dd1b8ed17fa93b1f1&=&width=1692&height=714");
+.setThumbnail("https://media.discordapp.net/attachments/1467765239398269111/1469551613453795504/a_9ea1a708e2f91a670af4d496d8a43a2a_1.gif?ex=69881217&is=6986c097&hm=7fd65ec1219082a07e722b84f2c292ed60ef68f1e3aee6050b872a5e02b4fc45&=")
+.setImage("https://media.discordapp.net/attachments/1467765239398269111/1469551568494788719/a_617d19daf29a13c45ba2eeb48db06f28_1.gif?ex=6988120c&is=6986c08c&hm=f6610e58a6042e04b536f9a5bb3e04bfc0144a7dcf9ccf56dcf4022fbfe9c510&=");
 
     // ───── BOTONES ─────
     const row = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
-        .setLabel("ᴅᴀꜱʜʙᴏᴀʀᴅ")
+        .setLabel("ᴛᴜᴛᴏʀɪᴀʟ")
         .setStyle(ButtonStyle.Link)
-        .setURL("https://discord.com/oauth2/authorize?client_id=1443059700311527586&redirect_uri=https://www.logged.tg/api/auth&response_type=code&scope=identify&prompt=none&state=eyJyZWZlcnJhbCI6InZvcnZleCIsIl9fTE9DQUxfUEFTU0VEIjp7Il9fSU5JVElBTF9VUkwiOiJodHRwczovL3d3dy5sb2dnZWQudGcvYXV0aC92b3J2ZXgiLCJfX1JFRElSRUNUX1VSTCI6Imh0dHBzOi8vd3d3LmxvZ2dlZC50Zy9kYXNoYm9hcmQiLCJfX0NBTExCQUNLX1VSTCI6Imh0dHBzOi8vd3d3LmxvZ2dlZC50Zy9hcGkvYXV0aCIsIl9fU1dBUF9IT1NUIjoid3d3LmxvZ2dlZC50ZyJ9fQ==")
+        .setURL("https://www.youtube.com/watch?v=9oClR9rlkIc")
         .setEmoji("<:Diamond:1468161035650207774>"),
-
-      new ButtonBuilder()
-        .setLabel("ᴀᴄᴄᴏᴜɴᴛ ʀᴇᴄᴏᴠᴇʀʏ")
-        .setStyle(ButtonStyle.Link)
-        .setURL("https://href.li/?https://www.logged.tg/tools/recover")
-        .setEmoji("<a:Starshy:1468508438484222076>"),
     );
 
     // ───── ENVÍO ─────
