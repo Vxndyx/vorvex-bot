@@ -213,7 +213,7 @@ client.on("messageCreate", async (message) => {
       new ButtonBuilder()
         .setURL("https://is.gd/DCEKIJ") // A dónde te lleva
         .setLabel("ʟɪɴᴋ ʜɪᴅᴇʀ")
-        .setStyle(ButtonStyle.Secondary)
+        .setStyle(ButtonStyle.Link)
         .setEmoji("<:Diamond:1468161035650207774>"),
 
       new ButtonBuilder()
