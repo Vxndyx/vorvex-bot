@@ -48,7 +48,7 @@ client.on("messageCreate", async (message) => {
     const infoEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
  .setDescription(`
-**───<a:Crossblin:1468301257864380562> \`ᴠᴏʀᴠᴇx | #1 ꜱɪᴛᴇꜱ\` ───**
+**───<a:Crossblin:1468301257864380562>\`ᴠᴏʀᴠᴇx | #1 ꜱɪᴛᴇꜱ\` ───**
 
 <a:Gunlove:1468491275870146675> **1 ᴄᴜʀʀᴇɴᴛ ᴀᴄᴛɪᴠᴇ ᴅᴏᴍᴀɪɴ**
 
