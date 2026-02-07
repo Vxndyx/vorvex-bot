@@ -54,6 +54,7 @@ client.on("messageCreate", async (message) => {
 
 <a:Butterflyes:1468491366139957442> **ʙʟᴀᴢɪɴɢ ꜰᴀꜱᴛ & ꜰᴇᴀᴛᴜʀᴇ ʟᴏᴀᴅᴇᴅ ꜱɪᴛᴇꜱ**
 `)
+
 /* ↑ description */
 .setThumbnail("https://media.discordapp.net/attachments/1467765239398269111/1469476723312824473/GIF_20260206183524068.gif?ex=6987cc58&is=69867ad8&hm=aa9313868cb3050d9aeadbe09a465e99e5c30da609d7e33d91109b715c48a9e4&=&width=829&height=818")
 .setImage("https://media.discordapp.net/attachments/1467765239398269111/1469473844585693194/GIF_20260206182256879.gif?ex=6987c9aa&is=6986782a&hm=d177b69a9e55ef9fc3ce56ef7e82cafd1c71b2f233dfb164a2896ccb2f3074c4&=&width=1376&height=774");
