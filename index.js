@@ -57,7 +57,7 @@ client.on("messageCreate", async (message) => {
 
 /* ↑ description */
 .setThumbnail("https://media.discordapp.net/attachments/1467765239398269111/1469476723312824473/GIF_20260206183524068.gif?ex=6987cc58&is=69867ad8&hm=aa9313868cb3050d9aeadbe09a465e99e5c30da609d7e33d91109b715c48a9e4&=&width=829&height=818")
-.setImage("https://media.discordapp.net/attachments/1467765239398269111/1469493998799556648/GIF_20260206194247019.gif?ex=6987dc6f&is=69868aef&hm=38b456dc336f893e2fbe976929db0c2a37722df61d83f139b4ff89d81c46df02&=&width=1785&height=714");
+.setImage("https://media.discordapp.net/attachments/1467765239398269111/1469495592697856193/GIF_20260206194951306.gif?ex=6987ddeb&is=69868c6b&hm=5ab65cc087c103769146be1f1d144f5ad161ae8fa371ad7dd1b8ed17fa93b1f1&=&width=1692&height=714");
 
     // ───── BOTONES ─────
     const row = new ActionRowBuilder().addComponents(
