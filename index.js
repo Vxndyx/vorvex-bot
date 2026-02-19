@@ -297,19 +297,19 @@ client.on("messageCreate", async (message) => {
   if (message.content === "!cookie-i") {
     const bannerEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
-      .setImage("https://media.discordapp.net/attachments/1467765239398269111/1468340016379068629/MOSHED-2025-11-28-21-33-5_2.gif?ex=698846f4&is=6986f574&hm=d55139a0216c0c4a7141e3e3de39ed2460c72d494744edb44ccaf8a908968963&=");
+      .setImage("https://media.discordapp.net/attachments/1467765239398269111/1468340016379068629/MOSHED-2025-11-28-21-33-5_2.gif?ex=699818f4&is=6996c774&hm=c537c7e152abaa15d8fab1f57e7e9ad0d65176889bb6b0d42d5b0f3773cd788b&=&width=427&height=223");
 
     const infoEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
       .setTitle("**───<a:Crossblin:1468301257864380562>ɪᴘʜᴏɴᴇ ᴄᴏᴏᴋɪᴇ ───**")
-      .setThumbnail("https://media.discordapp.net/attachments/1467765239398269111/1469770300647276544/giphy-downsized-large.gif?ex=6988ddc2&is=69878c42&hm=cc6389f32a1539f8d3b514440c89ec32da587d1c0e42a8495e8d0b66307236e1&=")
+      .setThumbnail("https://media.discordapp.net/attachments/1467765239398269111/1472842404389322865/YTDown.com_YouTube_M4rkim-Mutile-Pantera-Grimmjow_Media_f-9G5vtlG5U_001_1080p-ezgif.com-crop.gif?ex=6997ff61&is=6996ade1&hm=b514eba6bca412d89dca8250c5266c6372f5824b8f646b1fb16c74380f06a590&=&width=300&height=300")
       .setDescription(`
         <a:Arrowblack:1468301199416754177> **ᴡᴀᴛᴄʜ ᴛʜᴇ ᴛᴜᴛᴏʀɪᴀʟ ʙᴇʟᴏᴡ ꜰᴏʀ ɪᴘʜᴏɴᴇ ᴄᴏᴏᴋɪᴇꜱ**
         
         <a:Arrowblack:1468301199416754177> **ᴏᴘᴇɴ ᴀ ᴛɪᴄᴋᴇᴛ ɪɴ <#1468337005091094668> ɪꜰ ᴜ ꜱᴛɪʟʟ ɴᴇᴇᴅ ʜᴇʟᴘ**
         
       `)
-      .setImage("https://media.discordapp.net/attachments/1467765239398269111/1469770318791966740/giphy-2.gif?ex=6988ddc7&is=69878c47&hm=84353cea86c3aaf40e6e7de28b02c4edfabbd0ea04c62dda5358fdb0cc132dd7&=");
+      .setImage("https://media.discordapp.net/attachments/1467765239398269111/1472842339553771571/a_9eee4d4c1c162f634ef6b139a8d8a76f.gif?ex=6997ff51&is=6996add1&hm=f5a9e07a105ceda3fa6c4dcc57518036a90fc8ccb32e043742d0597e80883912&=&width=533&height=188");
 
     // 🔥 AHORA SON 2 BOTONES
     const buttons = new ActionRowBuilder().addComponents(
@@ -334,19 +334,19 @@ client.on("messageCreate", async (message) => {
   if (message.content === "!cookie-a") {
     const bannerEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
-      .setImage("https://media.discordapp.net/attachments/1467765239398269111/1468340016379068629/MOSHED-2025-11-28-21-33-5_2.gif?ex=698846f4&is=6986f574&hm=d55139a0216c0c4a7141e3e3de39ed2460c72d494744edb44ccaf8a908968963&=");
+      .setImage("https://media.discordapp.net/attachments/1467765239398269111/1468340016379068629/MOSHED-2025-11-28-21-33-5_2.gif?ex=699818f4&is=6996c774&hm=c537c7e152abaa15d8fab1f57e7e9ad0d65176889bb6b0d42d5b0f3773cd788b&=&width=427&height=223");
 
     const infoEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
       .setTitle("**───<a:Crossblin:1468301257864380562>ᴀɴᴅʀᴏɪᴅ ᴄᴏᴏᴋɪᴇ ───**")
-      .setThumbnail("https://media.discordapp.net/attachments/1467765239398269111/1469770300647276544/giphy-downsized-large.gif?ex=6988ddc2&is=69878c42&hm=cc6389f32a1539f8d3b514440c89ec32da587d1c0e42a8495e8d0b66307236e1&=")
+      .setThumbnail("https://media.discordapp.net/attachments/1467765239398269111/1472842404389322865/YTDown.com_YouTube_M4rkim-Mutile-Pantera-Grimmjow_Media_f-9G5vtlG5U_001_1080p-ezgif.com-crop.gif?ex=6997ff61&is=6996ade1&hm=b514eba6bca412d89dca8250c5266c6372f5824b8f646b1fb16c74380f06a590&=&width=300&height=300")
       .setDescription(`
         <a:Arrowblack:1468301199416754177> **ᴡᴀᴛᴄʜ ᴛʜᴇ ᴛᴜᴛᴏʀɪᴀʟ ʙᴇʟᴏᴡ ꜰᴏʀ ᴀɴᴅʀᴏɪᴅ ᴄᴏᴏᴋɪᴇꜱ**
         
         <a:Arrowblack:1468301199416754177> **ᴏᴘᴇɴ ᴀ ᴛɪᴄᴋᴇᴛ ɪɴ <#1468337005091094668> ɪꜰ ᴜ ꜱᴛɪʟʟ ɴᴇᴇᴅ ʜᴇʟᴘ**
         
       `)
-      .setImage("https://media.discordapp.net/attachments/1467765239398269111/1469770318791966740/giphy-2.gif?ex=6988ddc7&is=69878c47&hm=84353cea86c3aaf40e6e7de28b02c4edfabbd0ea04c62dda5358fdb0cc132dd7&=");
+      .setImage("https://media.discordapp.net/attachments/1467765239398269111/1472842339553771571/a_9eee4d4c1c162f634ef6b139a8d8a76f.gif?ex=6997ff51&is=6996add1&hm=f5a9e07a105ceda3fa6c4dcc57518036a90fc8ccb32e043742d0597e80883912&=&width=533&height=188");
 
     // 🔥 AHORA SON 2 BOTONES
     const buttons = new ActionRowBuilder().addComponents(
@@ -376,14 +376,14 @@ client.on("messageCreate", async (message) => {
     const infoEmbed = new EmbedBuilder()
       .setColor(0x1e1f22)
       .setTitle("**───<a:Crossblin:1468301257864380562>ᴘᴄ ᴄᴏᴏᴋɪᴇ ───**")
-      .setThumbnail("https://media.discordapp.net/attachments/1467765239398269111/1469770300647276544/giphy-downsized-large.gif?ex=6988ddc2&is=69878c42&hm=cc6389f32a1539f8d3b514440c89ec32da587d1c0e42a8495e8d0b66307236e1&=")
+      .setThumbnail("https://media.discordapp.net/attachments/1467765239398269111/1472842404389322865/YTDown.com_YouTube_M4rkim-Mutile-Pantera-Grimmjow_Media_f-9G5vtlG5U_001_1080p-ezgif.com-crop.gif?ex=6997ff61&is=6996ade1&hm=b514eba6bca412d89dca8250c5266c6372f5824b8f646b1fb16c74380f06a590&=&width=300&height=300")
       .setDescription(`
         <a:Arrowblack:1468301199416754177> **ᴡᴀᴛᴄʜ ᴛʜᴇ ᴛᴜᴛᴏʀɪᴀʟ ʙᴇʟᴏᴡ ꜰᴏʀ ᴀɴᴅʀᴏɪᴅ ᴄᴏᴏᴋɪᴇꜱ**
         
         <a:Arrowblack:1468301199416754177> **ᴏᴘᴇɴ ᴀ ᴛɪᴄᴋᴇᴛ ɪɴ <#1468337005091094668> ɪꜰ ᴜ ꜱᴛɪʟʟ ɴᴇᴇᴅ ʜᴇʟᴘ**
         
       `)
-      .setImage("https://media.discordapp.net/attachments/1467765239398269111/1469770318791966740/giphy-2.gif?ex=6988ddc7&is=69878c47&hm=84353cea86c3aaf40e6e7de28b02c4edfabbd0ea04c62dda5358fdb0cc132dd7&=");
+      .setImage("https://media.discordapp.net/attachments/1467765239398269111/1472842339553771571/a_9eee4d4c1c162f634ef6b139a8d8a76f.gif?ex=6997ff51&is=6996add1&hm=f5a9e07a105ceda3fa6c4dcc57518036a90fc8ccb32e043742d0597e80883912&=&width=533&height=188");
 
     // 🔥 AHORA SON 2 BOTONES
     const buttons = new ActionRowBuilder().addComponents(
